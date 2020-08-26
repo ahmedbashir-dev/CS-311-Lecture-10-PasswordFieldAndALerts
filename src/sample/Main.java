@@ -23,7 +23,7 @@ public class Main extends Application {
         submitBtn = new Button("Submit");
         usernameTf = new TextField();
         usernameTf.setPromptText("Enter Username");
-//        usernameTf.setPrefHeight(200);
+        usernameTf.setPrefHeight(200);
         userPasswordPf = new PasswordField();
         userPasswordPf.setPromptText("Enter Password");
         root = new VBox();
