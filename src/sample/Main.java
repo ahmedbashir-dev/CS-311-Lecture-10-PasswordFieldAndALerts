@@ -23,7 +23,7 @@ public class Main extends Application {
         submitBtn = new Button("Submit");
         usernameTf = new TextField();
         usernameTf.setPromptText("Enter Username");
-        usernameTf.setPrefHeight(200);
+//        usernameTf.setPrefHeight(200);
         userPasswordPf = new PasswordField();
         userPasswordPf.setPromptText("Enter Password");
         root = new VBox();
@@ -31,7 +31,7 @@ public class Main extends Application {
         root.setPadding(new Insets(20));
         root.getChildren().addAll(usernameLb,usernameTf,passwordLb,userPasswordPf,submitBtn);
         submitBtn.setOnAction(e -> {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("User Account Details");
             alert.setHeaderText("Following are the user account details: ");
             String output = "Username: " + usernameTf.getText() + "\n"
